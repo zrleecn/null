@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+/*顶部的导航*/
+.header .header-nav{
+    text-align: center;
+    width:100%;
+    background: #fff;
+    margin:0 auto;
+    position: fixed;
+    top:0;
+    z-index: 9999999;
+
+}
+/*导航菜单*/
+.header .header-nav .nav{
+    /*height:60px;*/
+    line-height:34px;
+    font-size: 16px;
+}
+/*伦布指示灯*/
+/*.slide .carousel-indicators > li.active{*/
+    /*background: yellow;*/
+/*}*/
+.slide .left .fa-angle-left , .slide .right .fa-angle-right{
+    font-size:30px;
+}
+/*轮播下面的圆圈*/
+.ad .ad-header  .cycle-radius{
+    width:40px;
+    height:40px;
+    border:1px solid #8c8c8c;
+    margin:30px 0 0 30px;
+	-webkit-border-radius:50% 50%;
+    -moz-border-radius:50% 50%;
+    border-radius:50% 50%;
+    text-align: center;
+    line-height:40px;
+    background: #fff;
+}
+/*轮播下面索引大于6的圆圈*/
+.ad .ad-header a:nth-child(n+6) .cycle-radius{
+    margin-bottom: 18px;
+}
+/*广告*/
+.ad{
+    padding:0;
+}
+.ad .ad-header{
+    background: #eee;
+    width:100%;
+    padding:0;
+ }
+
+.goods-item .thumbnail{
+
+	padding:0 !important;
+}
+/*商品图片高度*/
+.goods-item .thumbnail a img{
+    height:120px;
+}
+/*价格*/
+.goods-item .thumbnail .caption .price {
+	font-size:12px;
+
+ }
+ /*价格紧接的元素*/
+.goods-item .thumbnail .caption .price + span{
+	font-size:3px;
+ }
+ /*心形 收藏数量*/
+.goods-item .thumbnail .caption .fa-heart{
+     margin-left:6px;
+     color: #e3e3e3;
+     /*padding-top:10px;*/
+     /*font-size:16px;*/
+ }
+.goods-item .thumbnail .caption .love{
+    color: #e3e3e3;
+}
+/*心形 收藏数量背景颜色*/
+.goods-item .thumbnail .caption i.col-active{
+     color: #ff0000;
+ }
+ 
+ footer .text a{
+     color: #fff;
+ }
+
+ footer{
+	background:#122B40;
+	color:#fff;
+	text-align:center;
+
+
+
+ }

@@ -1,0 +1,255 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="/web/shop/Public/bootstrap/css/bootstrap.min.css">
+    <script src="/web/shop/Public/js/jquery.js"></script>
+    <script src="/web/shop/Public/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/web/shop/Public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/web/shop/Public/css/index.css">
+    <link rel="stylesheet" href="/web/shop/Public/css/login.css">
+    <script src="/web/shop/Public/js/holder.js"></script>
+    <script src="/web/shop/Public/js/device.min.js"></script>
+    <script src="/web/shop/Public/js/check_device.js"></script>
+</head>
+<style>
+    footer{
+        margin-top:90px;
+    }
+    /*验证码*/
+    .vcode{
+        width:40% !important;
+        -webkit-border-radius:6px 6px !important;
+        -moz-border-radius:6px 6px !important;
+        border-radius:6px 6px !important;
+        padding-left:10px !important;
+        margin-bottom: 20px !important;
+        height:50px !important;
+    }
+</style>
+
+<script>
+
+
+//    $.ajax({
+//        type:"get",
+//        url:"/web/shop/index.php/Home/Goods/loadComment",
+//        success:function (msg){
+//            alert(1);
+//            var json = JSON.parse(msg) ;
+//            alert(json[0].comment_content) ;
+//        }
+//    })
+    function check (){
+
+        var uname = $('.user_name').val();
+        if(uname==null || uname == undefined || uname==''){
+            $('.user_name ~ p').text("用户名不能为空");
+        }else{
+            $.ajax({
+                url:"/web/shop/index.php/Admin/User/check_uname",
+                type:"post",
+                data:{
+                    "uname":uname
+                },
+                success:function (msg){
+                    //验证码正确返回真 正常提交表单 否则不提交
+                    if(msg == 1) {
+                        $('.user_name ~ p').text("");
+                    }else{
+                        $('.user_name ~ p').text("用户不存在");
+                    }
+                }
+            })
+        }
+
+
+    }
+
+    $(function (){
+
+         check () ;
+//        点击登录按钮
+        $('.btn-login').click(function (){
+            //获取用户输入的验证码
+            var vcode = $('.vcode').val() ;
+//            var flag = false ;
+            if(vcode==null || vcode == undefined || vcode==''){
+                alert('验证码不能为空');
+                return false ;
+            }else{
+//                异步请求检查验证码是否正确
+                $.ajax({
+                    url:"/web/shop/index.php/Admin/User/check",
+                    type:"post",
+                    data:{
+                        "vcode":vcode
+                    },
+                    success:function (msg){
+                        //验证码正确返回真 正常提交表单 否则不提交
+                        if(msg == 1) {
+                            $("form").submit();
+                        }else{
+                            alert("验证码错误");
+                            //刷新验证码
+                            $('.vcode-img').click();
+                            return false ;
+                        }
+                    }
+                })
+            }
+
+        });  //end btn click
+
+
+        //异步检查用户
+        $('.user_name').keyup(function (){
+            var uname = $('.user_name').val();
+            if(uname==null || uname == undefined || uname==''){
+               $('.user_name ~ p').text("用户名不能为空");
+            }else{
+                $.ajax({
+                    url:"/web/shop/index.php/Admin/User/check_uname",
+                    type:"post",
+                    data:{
+                        "uname":uname
+                    },
+                    success:function (msg){
+                        //验证码正确返回真 正常提交表单 否则不提交
+                        if(msg == 1) {
+                            $('.user_name ~ p').text("");
+                        }else{
+                            $('.user_name ~ p').text("用户不存在");
+                        }
+                    }
+                })
+            }
+
+        });
+
+        //异步检查密码
+        $('.password').keyup(function (){
+            var pwd = $('.password').val();
+            var uname = $('.user_name').val();
+            if(pwd==null || pwd == undefined || pwd==''){
+                $('.password ~ p').text("密码不能为空");
+            }else{
+                $.ajax({
+                    url:"/web/shop/index.php/Admin/User/check_pwd",
+                    type:"post",
+                    data:{
+                        "pwd":pwd,
+                        "uname":uname
+                    },
+                    success:function (msg){
+                        //验证码正确返回真 正常提交表单 否则不提交
+                        if(msg == 1) {
+                            $('.password ~ p').text("");
+                        }else{
+                            $('.password ~ p').text("密码错误");
+                        }
+                    }
+                })
+            }
+
+        });
+
+
+    })
+
+
+</script>
+<body>
+<!--导航-->
+<div class="container header">
+    <div class="row">
+        <div class="header-nav">
+            <ul class="nav nav-pills  center-block">
+                <li ><a href="/web/shop/index.php/Home/Index/index">首页</a></li>
+                <li ><a href="/web/shop/index.php/Home/Goods/showlist">商品</a></li>
+                <li class="active"><a href="/web/shop/index.php/Admin/Index/my">个人中心</a></li>
+                <li><a href="/web/shop/index.php/Home/Index/contact">联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--插空填补-->
+<div style="height:50px;">
+
+</div>
+
+    <!--登录面板-->
+    <div class="container login-panel">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>用户登录</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form" method="post" action="/web/shop/index.php/Admin/User/login">
+
+                            <div class="form-group">
+                                <input type="text" placeholder="username" class="form-control user_name" name="user_name" value="<?php echo ($user_name); ?>">
+                                <i class="fa fa-user"></i>
+                                <p class="help-block text-warning">用户不存在</p>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="password" class="form-control password" name="password">
+                                <i class="fa fa-lock"></i>
+                                <p class="help-block text-danger">密码错误</p>
+                            </div>
+
+                            <div class="verify row">
+                                <lable class="col-xs-1"></lable>
+                                <input type="text" name="vcode" placeholder="验证码:" class="form-control col-xs-4 vcode">
+                                <img  src="/web/shop/index.php/Home/Index/verify" onclick="this.src='/web/shop/index.php/Home/Index/verify/'+Math.random()"  class="col-xs-5 vcode-img"/>
+                            </div>
+
+
+                            <div class="form-group">
+                                <!--<div class="main-checkbox">-->
+                                <!--<input type="checkbox" value="None" id="checkbox1" name="check">-->
+                                <!--<label for="checkbox1"></label>-->
+                                <!--</div>-->
+                                <span class="text">还没账号?<a href="/web/shop/index.php/Admin/User/register" class="register">马上注册</a></span>
+                                <button type="button" class="btn btn-primary pull-right btn-login">登录</button>
+                            </div>
+
+                        </form>
+
+
+
+
+
+                    </div>
+                </div> <!--panel-->
+            </div> <!--col-md-->
+        </div><!--row-->
+
+    </div> <!--container-->
+
+
+
+<!--页脚-->
+<footer>
+    <div class="container">
+        <div class='row'>
+            <div>
+					<span class="text text-center">Copyright ©2017 sweetencounter.cn 版权所有
+                        <br>
+                        <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" class="text" target="_blank">粤ICP备17043092号</a>
+                    </span>
+            </div>
+        </div>
+    </div>
+</footer>
+	
+
+</body>
+</html>

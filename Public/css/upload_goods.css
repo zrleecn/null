@@ -1,0 +1,102 @@
+
+/*
+输入框
+*/
+.upload-goods .form input[type='text'],.upload-goods .form  input[type='password']{
+    height:40px;
+    padding-left:44px;
+    border:none;
+    background: #F0F0F0;
+    -webkit-border-radius:20px 20px;
+    -moz-border-radius:20px 20px;
+    border-radius:20px 20px;
+    font-size:17px;
+}
+/*输入框提示信息*/
+.upload-goods .form .form-group .help-block{
+    padding-left:44px;
+    color: #F00;
+}
+/*
+输入框得到焦点
+*/
+.upload-goods .form  input[type='text']:focus , .upload-goods .form input[type='password']:focus{
+    outline:none;
+    box-shadow:none;
+    background: #e0e0e0;
+}
+/*输入框得到焦点对应的web文字*/
+.upload-goods .form input[type='text']:focus + i ,.upload-goods .form  input[type='password']:focus + i{
+    color: #00b4ef;
+}
+
+/*web文字*/
+.upload-goods .form .fa-user ,.upload-goods .form  .fa-lock ,.upload-goods .form  .fa-envelope-o{
+    font-size: 18px;
+    position: absolute;
+    left:20px;
+    top:11px ;
+}
+/*form-group*/
+.upload-goods .form  .form-group{
+    position: relative;
+}
+
+/*商品上传里面的所有web文字*/
+.upload-goods .form i{
+
+    color: #c8c8c8;
+
+}
+
+
+.upload-goods .form input[type='text']{
+    margin-top:10px;
+    border-radius: 10px 10px;
+
+}
+
+.upload-goods .form input[type='text'] + i{
+    position: absolute;
+    left:20px;
+    top:22px ;
+    font-size:17px;
+}
+
+/*商品图片包裹的div*/
+.upload-goods .goods_pic_box{
+    position: relative;
+    margin-top:50px;
+}
+
+/*图片上传的大加号*/
+.upload-goods .goods_pic_box  .fa-plus-square-o{
+    font-size:150px;
+    display: block;
+    position: absolute;
+    top:50px;
+    left:30%;
+}
+
+/*商品图片*/
+.goods_pic_selected{
+    margin-top:220px;
+}
+
+/*点击上传图片段落*/
+.upload-goods .goods_pic_box p{
+    position: absolute;
+    top:190px;
+    left:34%;
+}
+
+
+
+.btn{
+    width:80px;
+    margin-top:20px;
+    margin-right:20px;
+}
+
+
+

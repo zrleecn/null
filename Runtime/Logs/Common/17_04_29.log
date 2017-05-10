@@ -1,0 +1,12 @@
+[ 2017-04-29T11:30:45+08:00 ] ::1 /web/shop/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008415s ]
+ERR: 无法加载模块:User
+
+[ 2017-04-29T11:31:05+08:00 ] ::1 /web/shop/index.php/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000217s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002967s ]
+ERR: 无法加载模块:User
+

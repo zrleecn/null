@@ -1,0 +1,49 @@
+
+/*商品标题*/
+.media-list .media-body .goods-title{
+    font-size: 14px;
+    color:#000;
+}
+/*商品价格*/
+ .media-list .media-body .price{
+    font-size: 14px;
+    color:#ff0000;
+    margin-top:20px;
+}
+.media-list .media{
+    padding-bottom:0;
+    padding-top:0;
+    margin: 0 !important;
+}
+/*.panel{*/
+    /*padding-left:0;*/
+/*}*/
+.navbar{
+    background: #fff;
+    margin-bottom:0;
+    padding-left:30px;
+
+}
+
+.search-form .go-back,.search-form .cat_search ,.search-form .search-submit{
+    height:40px;
+}
+/*搜索放大镜*/
+.search-form  .form-control-feedback{
+    margin-top:5px;
+}
+/*搜索返回按钮*/
+.search-form .fa-angle-left{
+    margin-top:3px ;
+    font-size: 20px;
+}
+
+/*.fa-heart{*/
+    /*color: #f00;*/
+/*}*/
+
+/*商品图片*/
+.media-list .media .media-left{
+    width: 100px;
+    height:100px;
+}

@@ -1,0 +1,31 @@
+/*头部*/
+.header-bar{
+    background: #fff;
+    margin-bottom:-10px;
+}
+/*返回按钮*/
+.header-bar .go-back{
+    height: 44px;border:none;color: #c0c0c0;
+}
+/*返回图标*/
+.header-bar .go-back i{
+    margin-top: 10px;
+}
+.header-bar  .fa-user{
+    font-size:20px;
+    margin-top: 5px;
+    color: #c0c0c0;
+}
+
+/*头像*/
+.my-info .row{
+    background: #fff;
+    height:150px;
+    line-height:150px;
+}
+/*头像*/
+.my-info .head-portrait{
+    -webkit-border-radius:50% 50%;
+    -moz-border-radius:50% 50%;
+    border-radius:50% 50%;
+}

@@ -1,0 +1,3 @@
+<?php
+//000000000120a:7:{i:0;a:4:{s:6:"cat_id";s:1:"1";s:8:"cat_name";s:12:"手机数码";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}i:1;a:4:{s:6:"cat_id";s:1:"2";s:8:"cat_name";s:12:"电脑数码";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}i:2;a:4:{s:6:"cat_id";s:1:"3";s:8:"cat_name";s:9:"自行车";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}i:3;a:4:{s:6:"cat_id";s:1:"4";s:8:"cat_name";s:6:"书籍";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}i:4;a:4:{s:6:"cat_id";s:1:"5";s:8:"cat_name";s:12:"体育仪器";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}i:5;a:4:{s:6:"cat_id";s:1:"6";s:8:"cat_name";s:6:"乐器";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}i:6;a:4:{s:6:"cat_id";s:1:"7";s:8:"cat_name";s:6:"其他";s:10:"paraent_id";s:1:"0";s:9:"cat_thumb";s:0:"";}}
+?>

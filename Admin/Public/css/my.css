@@ -1,0 +1,50 @@
+/*子导航*/
+.sub-nav{
+    margin-top:10px;
+}
+/*添加商品 用户 两个图标*/
+.sub-nav .fa-plus-square-o ,.sub-nav .fa-user{
+    font-size: 24px;
+
+    color: #a9a9a9;
+}
+/*子菜单的链接字体*/
+.sub-nav .nav-menu a{
+    color: #000;
+}
+
+
+/*商品图片*/
+.container .goods_list .thumbnail a > img{
+    height:120px !important;
+}
+/*我的商品 我的收藏 导航*/
+.sub-nav .nav-menu a.active{
+    /*border-bottom:2px solid #1c94c4;*/
+    color:#1c94c4;
+}
+sub-nav .nav-menu{
+    padding:0;
+
+}
+/*子菜单下面的线*/
+.sub-nav .line{
+    border:1px solid #ccc;
+    /*height:1px;*/
+    width:65%;
+    position: absolute;
+    top:30px;
+    left:60px;
+    /*background: #ccc;*/
+}
+
+/*商品列表边距*/
+.goods_list{
+    padding-left: 8px;
+    padding-right:8px;
+}
+
+/*商品列表里面的链接颜色*/
+.goods_list .thumbnail .caption a{
+    color: #a9a9a9;
+}

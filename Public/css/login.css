@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    /*background:#00b4ef;*/
+    color: #D5D6E2;
+    font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+/*
+登录面板
+*/
+.login-panel{
+    margin:20px auto 0 ;
+
+}
+/*主面板*/
+.login-panel .panel{
+    -webkit-border-radius:20px 20px !important;
+    -moz-border-radius:20px 20px !important;
+    border-radius:20px 20px !important;
+}
+
+/*h1标题*/
+.login-panel .panel-heading > h1{
+    margin:30px auto 30px;
+    color: #D5D6E2;
+    font-weight: bold;
+}
+/*登录面板头部 */
+.login-panel .panel .panel-heading{
+
+    background-color: #FFFFFF !important;
+    text-align: center;
+    -webkit-border-radius:20px 20px 0 0px !important;
+    -moz-border-radius:20px 20px 0 0px !important;
+    border-radius:20px 20px 0 0px !important;
+}
+
+/*
+输入框
+*/
+.login-panel .panel .panel-body input[type='text'],input[type='password']{
+    height:40px;
+    padding-left:44px;
+    border:none;
+    background: #F0F0F0;
+    -webkit-border-radius:20px 20px;
+    -moz-border-radius:20px 20px;
+    border-radius:20px 20px;
+    font-size:17px;
+}
+/*输入框提示信息*/
+.login-panel .panel .panel-body .form-group .help-block{
+    padding-left:44px;
+    color: #F00;
+}
+/*
+输入框得到焦点
+*/
+.login-panel .panel .panel-body input[type='text']:focus ,input[type='password']:focus{
+    outline:none;
+    box-shadow:none;
+    background: #e0e0e0;
+}
+/*输入框得到焦点对应的web文字*/
+.login-panel .panel .panel-body input[type='text']:focus + i ,.login-panel .panel .panel-body input[type='password']:focus + i{
+    color: #00b4ef;
+}
+/*
+去除默认焦点线
+*/
+.login-panel .panel .panel-body .form-group{
+    outline: none;
+    position: relative;
+
+}
+
+/*
+    web文字颜色
+*/
+.login-panel .panel .panel-body i{
+
+    color: #c8c8c8;
+
+}
+
+/*web文字*/
+.login-panel .panel .panel-body .form-group .fa-user ,.login-panel .panel .panel-body .form-group .fa-lock ,.login-panel .panel .panel-body .form-group .fa-envelope-o{
+    font-size: 18px;
+    position: absolute;
+    left:20px;
+    top:11px ;
+}
+
+/*第一个输入框边距*/
+.login-panel .panel .panel-body .form .form-group:nth-child(1){
+    margin-top:20px;
+}
+/*登录注册按钮*/
+.login-panel .panel .panel-body .form .btn-login{
+    width:80px;
+    height:40px;
+    -webkit-border-radius:20px 20px;
+    -moz-border-radius:20px 20px;
+    border-radius:20px 20px;
+
+}
+
+/*马上注册 马上登录 的链接颜色*/
+.login-panel .panel .panel-body  .text > .register{
+    color: deepskyblue !important;
+}
+
+
+
+

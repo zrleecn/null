@@ -1,0 +1,50 @@
+/*头部*/
+.header-bar{
+    background: #fff;
+    margin-bottom:-10px;
+}
+/*返回按钮*/
+.header-bar .go-back{
+    height: 44px;border:none;
+}
+/*返回图标*/
+.header-bar .go-back i{
+    margin-top: 10px;color: #c0c0c0;
+}
+.header-bar .go-back .fa-shopping-cart{
+    font-size:20px;
+    margin-top: 5px;color: #B0B0B0;
+}
+
+/*列表组*/
+.menu-list .list-group{
+    margin-top:-10px;
+}
+.menu-list .list-group .list-group-item{
+    color: #5B5B5B;
+    background-color: #fff;
+    height:50px;
+    line-height:30px;
+}
+/*end 列表组*/
+
+
+.menu-list .list-group .list-group-item .fa-angle-right{
+    padding-top:1px;
+    font-size:20px;
+    color: #c0c0c0;
+}
+/*头像*/
+
+.my-info .row{
+    background: #fff;
+    height:150px;
+    line-height:150px;
+}
+/*头像*/
+.my-info .head-portrait{
+    -webkit-border-radius:50% 50%;
+    -moz-border-radius:50% 50%;
+    border-radius:50% 50%;
+}
+

@@ -1,0 +1,24 @@
+ul , li{
+    list-style:none;
+}
+.sub-cat-box{
+    padding-left:0 !important;
+}
+/*分类广告*/
+.cat-ad{
+
+    margin-bottom:10px;
+}
+
+
+.sub-cat ul > li {
+    padding-left:10px;
+    font-size:15px;
+    color: #555555;
+    padding-bottom:5px;
+}
+.line{
+    height:1px;
+    background: #ccc;
+    clear: both;
+}

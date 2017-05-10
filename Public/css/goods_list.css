@@ -1,0 +1,54 @@
+body{
+    background: #F0F4F7;
+}
+/*子分类的 iframe*/
+.cat-container .main-cat{
+    width:72%;
+    overflow: scroll;
+}
+/*搜索返回 搜索框 */
+.search-form .go-back,.search-form .cat_search ,.search-form .search-submit{
+    height:40px;
+    margin-top:0px;
+    margin-bottom:7px;
+}
+.search-form .fa-angle-left{
+    margin-top:3px ;
+    font-size: 20px;
+}
+
+/*搜索放大镜*/
+.search-form .form-control-feedback{
+    margin-top:4px;
+}
+/*分类 容器间距*/
+.cat-container .list-group{
+    height:480px;
+    overflow: scroll;
+}
+/*商品列表间距*/
+.cat-container .row .main-cat{
+    padding:0;
+}
+.cat-container .row{
+    padding:0;
+}
+
+/*左侧分类*/
+.cat-container .left-cat{
+    width:28%;
+    padding-left:0;
+    padding-right:0;
+    text-align: center;
+}
+
+
+.cat-container .cat-list .list-group-item{
+    padding:20px 0 !important;
+}
+
+.header .header-nav{
+    width:100%;
+    background: #fff;
+}
+

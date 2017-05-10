@@ -1,0 +1,46 @@
+body{
+    background: #EEEEEE;
+}
+
+/*详情标题*/
+.detail-header .de-title{
+    height:60px;
+    line-height:60px;
+    font-size:20px ;
+    background: #EEEEEE;
+}
+/*返回图标*/
+.detail-header .de-title .fa-angle-left{
+    font-size:30px;
+}
+/*商品标题*/
+.goods-title{
+    /*height:60px;*/
+    background: #fff;
+
+}
+.goods-title p{
+    font-size:20px;
+}
+.goods-title .price{
+    color: #ff0000;
+}
+.goods-title .price span{
+    font-size:14px;
+}
+/*导航标题*/
+.detail-header .de-title .goods-nav{
+    text-align: center;
+
+}
+
+/*无边距*/
+.no-pa{
+    padding:0;
+    margin:0;
+}
+/*商品详情*/
+.goods-detail{
+    background: #fff;
+
+}

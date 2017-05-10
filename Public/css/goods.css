@@ -1,0 +1,40 @@
+ul , li{
+    list-style:none;
+}
+.sub-cat-box{
+    padding-left:0 !important;
+}
+/*分类广告*/
+.cat-ad{
+
+    margin-bottom:10px;
+}
+
+
+.sub-cat ul > li {
+    padding-left:0px;
+    font-size:15px;
+    color: #555555;
+    padding-bottom:5px;
+}
+.line{
+    height:1px;
+    background: #ccc;
+    clear: both;
+}
+
+
+/*商品列表*/
+.goods{
+    padding:0;
+    margin:0;
+}
+.goods .row .col-xs-6{
+    padding:0px;
+    width:46%;
+
+}
+
+.goods .thumbnail img{
+    height:120px;
+}

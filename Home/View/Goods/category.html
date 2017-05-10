@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <script src="__PUBLIC__/js/jquery.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/index.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/category.css">
+    <script src="__PUBLIC__/js/holder.js"></script>
+    <script src="__PUBLIC__/js/device.min.js"></script>
+    <script src="__PUBLIC__/js/check_device.js"></script>
+</head>
+<body>
+
+
+<div class="container cat-ad" >
+    <div class="row">
+        <img  src="holder.js/250x110">
+    </div>
+</div>
+
+<!--具体分类-->
+<div class="container">
+
+
+<!--加载分类-->
+    <div class="row">
+        <foreach name="sub_cat" item="v">
+            <div class="col-xs-6">
+                <div class="thumbnail">
+                    <img src="holder.js/100x100" alt="...">
+                    <div class="caption">
+                        <p class="price" style="text-align: center;"><{$v.cat_name}></p>
+                    </div>
+                </div>
+            </div>
+
+        </foreach>
+<!--没有数据时候显示-->
+        <if condition="count($sub_cat) lt 1 ">
+            <h1>:(</h1>
+            <{$msg}>
+        </if>
+
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

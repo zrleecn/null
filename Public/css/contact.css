@@ -1,0 +1,84 @@
+
+/*
+输入框
+*/
+.contact .form input[type='text']{
+    height:40px;
+    padding-left:44px;
+    border:none;
+    background: #F0F0F0;
+    -webkit-border-radius:20px 20px;
+    -moz-border-radius:20px 20px;
+    border-radius:20px 20px;
+    font-size:17px;
+    margin-top:20px;
+    border-radius: 10px 10px;
+}
+/*输入框提示信息*/
+.contact .form .form-group .help-block{
+    padding-left:44px;
+    color: #F00;
+}
+/*
+输入框得到焦点
+*/
+.contact .form input[type='text']:focus{
+    outline:none;
+    box-shadow:none;
+    background: #e0e0e0;
+
+}
+/*输入框得到焦点对应的web文字*/
+.contact .form input[type='text']:focus + i ,.contact .form input[type='password']:focus + i{
+    color: #00b4ef;
+}
+/*
+去除默认焦点线
+*/
+.contact .form .form-group{
+    outline: none;
+    position: relative;
+
+}
+
+/*
+    web文字颜色
+*/
+.contact .form i{
+
+    color: #c8c8c8;
+
+}
+
+
+.contact .form .user-input{
+    position: relative;
+
+}
+
+/*文本输入框*/
+.contact .form textarea{
+    text-align: left;
+}
+/*text类型输入框*/
+.contact .form input[type='text']+i{
+    position: absolute;
+    left:30px;
+    top:32px ;
+    font-size:17px;
+}
+
+/*表单下面的按钮*/
+.contact .form .btn{
+    width:80px;
+    height:44px;
+    margin-top:20px;
+    margin-right:20px;
+}
+footer{
+    width:100%;
+    position: absolute;
+    bottom:0;
+
+}
+
